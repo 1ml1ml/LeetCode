@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #include <iostream>
 
@@ -10,11 +10,11 @@ public:
 		int nRet = 0;
 		while (x != 0)
 		{
-			//Òç³öÅÐ¶Ï
+			//æº¢å‡ºåˆ¤æ–­
 			if (nRet > INT_MAX / 10 || nRet < INT_MIN / 10)
 				return 0;
 
-			//·´×ª
+			//åè½¬
 			nRet = nRet * 10 + x % 10;
 			x /= 10;
 		}

@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #include <iostream>
 #include <string>
@@ -6,24 +6,24 @@
 
 #if 1
 
-//×Ô¼ºĞ´µÄ·½·¨¶à´ÎÓÅ»¯ºó /(¨Òo¨Ò)/~~
+//è‡ªå·±å†™çš„æ–¹æ³•å¤šæ¬¡ä¼˜åŒ–å /(ã„’oã„’)/~~
 class CSolution
 {
 public:
     std::string convert(std::string s, int numRows)
     {
-        //Ò»ĞĞ»òÕßÒ»ÁĞÖ±½Ó·µ»Øs
+        //ä¸€è¡Œæˆ–è€…ä¸€åˆ—ç›´æ¥è¿”å›s
         if (numRows == 1 || numRows >= s.size())
             return s;
 
         std::vector<std::string> vec(numRows, std::string());
         for (int nI = 0, nSize = s.size(), nX = 0; nI < nSize; )
         {
-            //»­ÊúÁĞ Ã¿´Î¶¼ÊÇ´Ó0µ½numRows-1ĞĞ
+            //ç”»ç«–åˆ— æ¯æ¬¡éƒ½æ˜¯ä»0åˆ°numRows-1è¡Œ
             for (nX = 0; nX < numRows && nI < nSize; nX++)
                 vec[nX] += s[nI++];
 
-            //»­Ğ±ÁĞ Ã¿´Î¶¼ÊÇ´ÓnumRow-2µ½1ĞĞ¿ªÊ¼
+            //ç”»æ–œåˆ— æ¯æ¬¡éƒ½æ˜¯ä»numRow-2åˆ°1è¡Œå¼€å§‹
             for (nX = numRows - 2; nX >= 1 && nI < nSize; nX--)
                 vec[nX] += s[nI++];
         }
@@ -38,31 +38,31 @@ public:
 
 #else
 
-//Ñ¹Ëõ¾ØÕó·½·¨ ´óÀĞÅ£Æ¤
+//å‹ç¼©çŸ©é˜µæ–¹æ³• å¤§ä½¬ç‰›çš®
 class CSolution 
 {
 public:
     std::string convert(std::string s, int numRows)
     {
-        //Ò»ĞĞ»òÕßÒ»ÁĞÖ±½Ó·µ»Øs
+        //ä¸€è¡Œæˆ–è€…ä¸€åˆ—ç›´æ¥è¿”å›s
         if (numRows == 1 || numRows >= s.size())
             return s;
 
         std::vector<std::string> vec(numRows, std::string());
 
-        //nTÑ­»·ÖÜÆÚ Ã¿Ò»¸öÖÜÆÚÒªÌí¼Ó2 * numRows - 2¸ö×Ö·û
+        //nTå¾ªç¯å‘¨æœŸ æ¯ä¸€ä¸ªå‘¨æœŸè¦æ·»åŠ 2 * numRows - 2ä¸ªå­—ç¬¦
         for (int nI = 0, nX = 0, nT = 2 * numRows - 2; nI < s.size(); nI++)
         {
-            //Ã¿Ò»´ÎÌí¼ÓµÄ×Ö·û×ÜÊÇÔÚ¸ÃĞĞµÄÄ©Î²
+            //æ¯ä¸€æ¬¡æ·»åŠ çš„å­—ç¬¦æ€»æ˜¯åœ¨è¯¥è¡Œçš„æœ«å°¾
             vec[nX] += s[nI];
 
             //nI % nT < numRows - 1 
-            //³ÉÁ¢ ±íÃ÷´ËÊ±Ìí¼ÓµÄ×Ö·ûÓ¦¸ÃÔÚÊúÁĞËùÒÔnXÏòÏÂ×ß
-            //²»³ÉÁ¢ ±íÃ÷´ËÊ±Ìí¼ÓµÄ×Ö·ûÓ¦¸ÃÔÚĞ±ÁĞËùÒÔnXÍùÉÏ×ß
+            //æˆç«‹ è¡¨æ˜æ­¤æ—¶æ·»åŠ çš„å­—ç¬¦åº”è¯¥åœ¨ç«–åˆ—æ‰€ä»¥nXå‘ä¸‹èµ°
+            //ä¸æˆç«‹ è¡¨æ˜æ­¤æ—¶æ·»åŠ çš„å­—ç¬¦åº”è¯¥åœ¨æ–œåˆ—æ‰€ä»¥nXå¾€ä¸Šèµ°
             nI % nT < numRows - 1 ? nX++ : nX--;
         }
 
-        //Ã¿ĞĞÏà¼Ó»ñµÃ½á¹û
+        //æ¯è¡Œç›¸åŠ è·å¾—ç»“æœ
         std::string strRet;
         for (std::string& str : vec)
             strRet += str;

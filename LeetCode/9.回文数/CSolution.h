@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #include <iostream>
 
@@ -20,7 +20,7 @@ public:
 private:
     inline int __halfReverse(int& x)
     {
-        //·´×ªÒ»°ëÊý×Ö
+        //åè½¬ä¸€åŠæ•°å­—
         int nHalfReverse = 0;
         while (x > nHalfReverse)
         {

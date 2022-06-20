@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #include <iostream>
 
@@ -7,10 +7,10 @@ class CSolution
 public:
 	int myAtoi(std::string s)
 	{
-		int nRet = 0, nFlag = 0;	//Õı¸º±êÖ¾Î»
+		int nRet = 0, nFlag = 0;	//æ­£è´Ÿæ ‡å¿—ä½
 		for (auto itrBegin = s.begin(), itrEnd = s.end(); itrBegin != itrEnd; itrBegin++)
 		{
-			//È·¶¨Õı¸ººÅ
+			//ç¡®å®šæ­£è´Ÿå·
 			if (0 == nFlag)
 			{
 				if (*itrBegin == ' ')
@@ -28,27 +28,27 @@ public:
 					continue;
 				}
 
-				//Èç¹û²»ÊÇ¿Õ¸ñ,+,-Ôò×Ö·û´®²»ºÏ·¨
+				//å¦‚æœä¸æ˜¯ç©ºæ ¼,+,-åˆ™å­—ç¬¦ä¸²ä¸åˆæ³•
 				if (*itrBegin < '0' || *itrBegin > '9')
 					return 0;
 
-				//±êÖ¾Î»Ä¬ÈÏÎªÕı
+				//æ ‡å¿—ä½é»˜è®¤ä¸ºæ­£
 				nFlag |= 1;
 			}
 
 			if (*itrBegin >= '0' && *itrBegin <= '9')
 			{
-				//Òç³öÅĞ¶Ï
+				//æº¢å‡ºåˆ¤æ–­
 				if ((INT_MAX / 10 == nRet && *itrBegin - '0' > INT_MAX % 10) || nRet > INT_MAX / 10)
 					return INT_MAX;
 
-				//Òç³öÅĞ¶Ï
+				//æº¢å‡ºåˆ¤æ–­
 				if ((INT_MIN / 10 == nRet && -(*itrBegin - '0') < INT_MIN % 10) || nRet < INT_MIN / 10)
 					return INT_MIN;
 
 				nRet = nRet * 10 + nFlag * (*itrBegin - '0');
 			}
-			//²»ÊÇÊı×ÖÔò×ª»»½áÊø
+			//ä¸æ˜¯æ•°å­—åˆ™è½¬æ¢ç»“æŸ
 			else break;
 		}
 		return nRet;
