@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6.Z字形变换", "6.Z字形变换\6.Z字形变换.vcxproj", "{46A5CF4E-A8A0-4C06-806D-BE2D6E2A1029}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7.整数反转", "7.整数反转\7.整数反转.vcxproj", "{1807F87F-EFB0-44F4-BFD8-326CFDA34852}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{46A5CF4E-A8A0-4C06-806D-BE2D6E2A1029}.Release|x64.Build.0 = Release|x64
 		{46A5CF4E-A8A0-4C06-806D-BE2D6E2A1029}.Release|x86.ActiveCfg = Release|Win32
 		{46A5CF4E-A8A0-4C06-806D-BE2D6E2A1029}.Release|x86.Build.0 = Release|Win32
+		{1807F87F-EFB0-44F4-BFD8-326CFDA34852}.Debug|x64.ActiveCfg = Debug|x64
+		{1807F87F-EFB0-44F4-BFD8-326CFDA34852}.Debug|x64.Build.0 = Debug|x64
+		{1807F87F-EFB0-44F4-BFD8-326CFDA34852}.Debug|x86.ActiveCfg = Debug|Win32
+		{1807F87F-EFB0-44F4-BFD8-326CFDA34852}.Debug|x86.Build.0 = Debug|Win32
+		{1807F87F-EFB0-44F4-BFD8-326CFDA34852}.Release|x64.ActiveCfg = Release|x64
+		{1807F87F-EFB0-44F4-BFD8-326CFDA34852}.Release|x64.Build.0 = Release|x64
+		{1807F87F-EFB0-44F4-BFD8-326CFDA34852}.Release|x86.ActiveCfg = Release|Win32
+		{1807F87F-EFB0-44F4-BFD8-326CFDA34852}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
