@@ -19,11 +19,11 @@ public:
         std::vector<std::string> vec(numRows, std::string());
         for (int nI = 0, nSize = s.size(), nX = 0; nI < nSize; )
         {
-            //画竖列 每次都是从0到numRows行 nY列开始
+            //画竖列 每次都是从0到numRows-1行
             for (nX = 0; nX < numRows && nI < nSize; nX++)
                 vec[nX] += s[nI++];
 
-            //画斜列 每次都是从numRow-2到0行开始
+            //画斜列 每次都是从numRow-2到1行开始
             for (nX = numRows - 2; nX >= 1 && nI < nSize; nX--)
                 vec[nX] += s[nI++];
         }
