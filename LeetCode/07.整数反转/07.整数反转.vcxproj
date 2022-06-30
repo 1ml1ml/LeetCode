@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{228025ee-07a2-4b5d-b33c-0cb7ba72376b}</ProjectGuid>
-    <RootNamespace>My8字符串转换整数atoi</RootNamespace>
+    <ProjectGuid>{1807f87f-efb0-44f4-bfd8-326cfda34852}</ProjectGuid>
+    <RootNamespace>My7整数反转</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>07.整数反转</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

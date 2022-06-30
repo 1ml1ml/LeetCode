@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{46a5cf4e-a8a0-4c06-806d-be2d6e2a1029}</ProjectGuid>
-    <RootNamespace>My6Z字形变换</RootNamespace>
+    <ProjectGuid>{228025ee-07a2-4b5d-b33c-0cb7ba72376b}</ProjectGuid>
+    <RootNamespace>My8字符串转换整数atoi</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>08.字符串转换整数 (atoi)</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
