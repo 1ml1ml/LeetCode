@@ -10,33 +10,30 @@ public:
     //KMPÀ„∑®
     int strStr(const std::string& haystack, const std::string& needle)
     {
-        if (0 == needle.size())
-            return 0;
-
         std::vector<int> vecNext = getNext(needle);
-        for (int i = 0, j = 0; i < haystack.size(); i++)
+        int i = 0, j = 0;
+        while (i < haystack.size() && j < static_cast<int>(needle.size()))
         {
-            while (j > 0 && haystack[i] != needle[j])
-                j = vecNext[j - 1];
-            if (haystack[i] == needle[j])
-                j++;
-            if (j == needle.size())
-                return i - j + 1;
+            if (-1 == j || haystack[i] == needle[j])
+                i++, j++;
+            else j = vecNext[j];
         }
-        return -1;
+        return j == needle.size() ? i - j : -1;
     }
 
 private:
     std::vector<int> getNext(const std::string& str)
     {
-        std::vector<int> vecNext(str.size());
-        for (int i = 1, j = 0; i < str.size(); i++)
+        std::vector<int> vecNext(str.size(), -1);
+        for (int i = 0, j = -1; i < str.size() - 1; )
         {
-            while (j > 0 && str[i] != str[j])
-                j = vecNext[j - 1];
-            if (str[i] == str[j])
-                j++;
-            vecNext[i] = j;
+            if (-1 == j || str[i] == str[j])
+            {
+                if (str[++i] == str[++j])
+                    vecNext[i] = vecNext[j];
+                else vecNext[i] = j;
+            }
+            else j = vecNext[j];
         }
         return vecNext;
     }

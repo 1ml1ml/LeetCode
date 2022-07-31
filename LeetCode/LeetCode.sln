@@ -43,6 +43,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "27.移除元素", "27.移�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "28.实现strStr()", "28.实现strStr()\28.实现strStr().vcxproj", "{681FC927-CBC4-47F7-AB46-B633CB089D90}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "29.两数相除", "29.两数相除\29.两数相除.vcxproj", "{C79EA624-99E9-452B-9900-57694D25658C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -211,6 +213,14 @@ Global
 		{681FC927-CBC4-47F7-AB46-B633CB089D90}.Release|x64.Build.0 = Release|x64
 		{681FC927-CBC4-47F7-AB46-B633CB089D90}.Release|x86.ActiveCfg = Release|Win32
 		{681FC927-CBC4-47F7-AB46-B633CB089D90}.Release|x86.Build.0 = Release|Win32
+		{C79EA624-99E9-452B-9900-57694D25658C}.Debug|x64.ActiveCfg = Debug|x64
+		{C79EA624-99E9-452B-9900-57694D25658C}.Debug|x64.Build.0 = Debug|x64
+		{C79EA624-99E9-452B-9900-57694D25658C}.Debug|x86.ActiveCfg = Debug|Win32
+		{C79EA624-99E9-452B-9900-57694D25658C}.Debug|x86.Build.0 = Debug|Win32
+		{C79EA624-99E9-452B-9900-57694D25658C}.Release|x64.ActiveCfg = Release|x64
+		{C79EA624-99E9-452B-9900-57694D25658C}.Release|x64.Build.0 = Release|x64
+		{C79EA624-99E9-452B-9900-57694D25658C}.Release|x86.ActiveCfg = Release|Win32
+		{C79EA624-99E9-452B-9900-57694D25658C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
