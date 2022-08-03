@@ -45,6 +45,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "28.实现strStr()", "28.实
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "29.两数相除", "29.两数相除\29.两数相除.vcxproj", "{C79EA624-99E9-452B-9900-57694D25658C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "31.下一个排列", "31.下一个排列\31.下一个排列.vcxproj", "{524707D3-E671-4913-A067-0F8000EE0A2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -221,6 +223,14 @@ Global
 		{C79EA624-99E9-452B-9900-57694D25658C}.Release|x64.Build.0 = Release|x64
 		{C79EA624-99E9-452B-9900-57694D25658C}.Release|x86.ActiveCfg = Release|Win32
 		{C79EA624-99E9-452B-9900-57694D25658C}.Release|x86.Build.0 = Release|Win32
+		{524707D3-E671-4913-A067-0F8000EE0A2D}.Debug|x64.ActiveCfg = Debug|x64
+		{524707D3-E671-4913-A067-0F8000EE0A2D}.Debug|x64.Build.0 = Debug|x64
+		{524707D3-E671-4913-A067-0F8000EE0A2D}.Debug|x86.ActiveCfg = Debug|Win32
+		{524707D3-E671-4913-A067-0F8000EE0A2D}.Debug|x86.Build.0 = Debug|Win32
+		{524707D3-E671-4913-A067-0F8000EE0A2D}.Release|x64.ActiveCfg = Release|x64
+		{524707D3-E671-4913-A067-0F8000EE0A2D}.Release|x64.Build.0 = Release|x64
+		{524707D3-E671-4913-A067-0F8000EE0A2D}.Release|x86.ActiveCfg = Release|Win32
+		{524707D3-E671-4913-A067-0F8000EE0A2D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
