@@ -49,6 +49,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "31.下一个排列", "31.�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "33.搜索旋转排序数组", "33.搜索旋转排序数组\33.搜索旋转排序数组.vcxproj", "{39FA1965-5810-4853-BE80-36C584E2B1C2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "34.在排序数组中查找元素的第一个和最后一个位置", "34.在排序数组中查找元素的第一个和最后一个位置\34.在排序数组中查找元素的第一个和最后一个位置.vcxproj", "{1E32F6C2-E20E-427A-B9AF-AC1349860F91}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -241,6 +243,14 @@ Global
 		{39FA1965-5810-4853-BE80-36C584E2B1C2}.Release|x64.Build.0 = Release|x64
 		{39FA1965-5810-4853-BE80-36C584E2B1C2}.Release|x86.ActiveCfg = Release|Win32
 		{39FA1965-5810-4853-BE80-36C584E2B1C2}.Release|x86.Build.0 = Release|Win32
+		{1E32F6C2-E20E-427A-B9AF-AC1349860F91}.Debug|x64.ActiveCfg = Debug|x64
+		{1E32F6C2-E20E-427A-B9AF-AC1349860F91}.Debug|x64.Build.0 = Debug|x64
+		{1E32F6C2-E20E-427A-B9AF-AC1349860F91}.Debug|x86.ActiveCfg = Debug|Win32
+		{1E32F6C2-E20E-427A-B9AF-AC1349860F91}.Debug|x86.Build.0 = Debug|Win32
+		{1E32F6C2-E20E-427A-B9AF-AC1349860F91}.Release|x64.ActiveCfg = Release|x64
+		{1E32F6C2-E20E-427A-B9AF-AC1349860F91}.Release|x64.Build.0 = Release|x64
+		{1E32F6C2-E20E-427A-B9AF-AC1349860F91}.Release|x86.ActiveCfg = Release|Win32
+		{1E32F6C2-E20E-427A-B9AF-AC1349860F91}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
