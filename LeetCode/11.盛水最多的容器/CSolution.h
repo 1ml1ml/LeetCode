@@ -2,7 +2,7 @@
 
 #include <vector>
 
-class Solution
+class CSolution
 {
 public:
 	int maxArea(std::vector<int>& height)

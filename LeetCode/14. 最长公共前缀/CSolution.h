@@ -3,7 +3,7 @@
 #include <vector>
 #include <string>
 
-class Solution 
+class CSolution 
 {
 public:
 	std::string longestCommonPrefix(std::vector<std::string>& strs) 

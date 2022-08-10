@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 
-class Solution
+class CSolution
 {
 public:
 	std::string intToRoman(int nNum)
@@ -30,4 +30,4 @@ private:
 	static std::vector<std::pair<char, char>> sm_vecPairRoman;
 };
 
-std::vector<std::pair<char, char>> Solution::sm_vecPairRoman = { std::pair<char, char>('I', 'V'), std::pair<char, char>('X', 'L'), std::pair<char, char>('C', 'D'), std::pair<char, char>('M', 'M') };
+std::vector<std::pair<char, char>> CSolution::sm_vecPairRoman = { std::pair<char, char>('I', 'V'), std::pair<char, char>('X', 'L'), std::pair<char, char>('C', 'D'), std::pair<char, char>('M', 'M') };

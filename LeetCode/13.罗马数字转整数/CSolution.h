@@ -3,7 +3,7 @@
 #include <string>
 #include <map>
 
-class Solution 
+class CSolution 
 {
 public:
 	int romanToInt(std::string str)
@@ -18,4 +18,4 @@ private:
 	static std::map<char, int> sm_mapInt;
 };
 
-std::map<char, int> Solution::sm_mapInt{ {'I', 1}, {'V', 5}, {'X', 10}, {'L', 50}, {'C', 100}, {'D', 500}, {'M', 1000} };
+std::map<char, int> CSolution::sm_mapInt{ {'I', 1}, {'V', 5}, {'X', 10}, {'L', 50}, {'C', 100}, {'D', 500}, {'M', 1000} };
