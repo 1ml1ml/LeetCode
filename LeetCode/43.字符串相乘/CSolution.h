@@ -1,15 +1,9 @@
-<<<<<<< HEAD
 #pragma once
 
 #include <iostream>
 #include <string>
 
-=======
->>>>>>> 3c2bafae2fdfa1675150884360adc9fc3926c0e2
-#include <iostream>
-#include <string>
-
-class CSolution
+class Solution
 {
 public:
 	std::string multiply(std::string num1, std::string num2)
@@ -50,11 +44,7 @@ public:
 	}
 
 private:
-<<<<<<< HEAD
 	std::string strAdd(std::string& str1, std::string& str2)
-=======
-	std::string strAdd(std::string & str1, std::string & str2)
->>>>>>> 3c2bafae2fdfa1675150884360adc9fc3926c0e2
 	{
 		if ("0" == str1)
 			return str2;
@@ -79,8 +69,4 @@ private:
 
 		return strRet;
 	}
-<<<<<<< HEAD
 };
-=======
-};
->>>>>>> 3c2bafae2fdfa1675150884360adc9fc3926c0e2
