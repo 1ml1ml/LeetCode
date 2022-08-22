@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 
-class Solution
+class CSolution
 {
 public:
 	std::string multiply(std::string num1, std::string num2)
