@@ -10,7 +10,7 @@ public:
     {
 		//Ì°ĞÄËã·¨
         jump(nums.begin(), nums.end() - 1);
-        return m_count;
+        return m_nCount;
     }
 
 private:
@@ -18,7 +18,7 @@ private:
     {
 		if (begin < end)
 		{
-            m_count++;
+            m_nCount++;
 
 			auto itrFar = begin + *begin;
 			for (auto itrBegin = begin + 1, itrEnd = itrFar; itrFar < end && itrBegin <= itrEnd; itrBegin++)
@@ -31,5 +31,5 @@ private:
     }
 
 private:
-    int m_count = 0;
+    int m_nCount = 0;
 };
